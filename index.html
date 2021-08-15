@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>  Bug Tracking System   </title>
+            <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                   <img src="image2/bug-logo3.png"height="60"width="10">
+                   <!--<h1>Bug Tracking System</h1>-->
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="Home.html"class="navdesign">HOME</a></li>
+                        <li><a href="About us.html"class="navdesign">ABOUT US</a></li>
+                        <!--<li><a href="Accessories.html">Developer</a></li>-->
+                        <li><a href="Contact us.html"class="navdesign">CONTACT US</a></li>
+                        <!--<li><a href="login.html" class="logindesign">Login</a></li>-->
+
+                        <li>
+                            <div class="dropdown-containar">
+                                <!--<button style="background:#f2184f;color:#fff;">Login</button>-->
+                                <a href="login.html" class="logindesign">Login</a>
+                                <div class="dropdown-content">
+                                  <a href="Manager.html">Manager</a>
+                                  <a href="Testerpage.html">Tester</a>
+                                  <a href="Developerpage.html">Developer</a>
+                                </div>
+                              </div>
+                            </li>
+                         
+                    </ul>
+                </div>
+            
+            </nav>
+            
+
+
+
+
+
+
+            <div class="information">
+                <div class="overlay">
+
+                </div>
+                <img src="image2/apple-iphone.jpg" class="mobile">
+                <div id="circle">
+                    <div class="feature one">
+                        <!--<img src="image2/camera.png">-->
+                        <div>
+                            <h1>Bug Tracking System</h1>
+                            <!--<p>12MP , Wide Angle Lens</p>-->
+                            
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <!--<img src="image2/processor.png">-->
+                        <div>
+                            <h1>Bug Tracking System</h1>
+                            <!--<p>Snapdragon Octa-core 11nm</p>-->
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <!--<img src="image2/battery.png">-->
+                        <div>
+                            <h1>Bug Tracking System</h1>
+                            <!--<p>5000mAH, 720Hrs Standby</p>-->
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <!--<img src="image2/display.png">-->
+                        <div>
+                            <h1>Bug Tracking System</h1>
+                            <!--<h1>Display</h1>
+                            <p>6.5" Mini- Drop Fullscreen </p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="controls">
+                <img src="image2/arrow-top-512.png" id="upbtn">
+                <h3>Website</h3>
+            <img src="image2/arrow-top-512.png" id="downbtn">
+                
+            </div>
+        </div>
+        <script>
+            var circle= document.getElementById("circle");
+            var upbtn= document.getElementById("upbtn");
+            var downbtn= document.getElementById("downbtn");
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+            
+            
+            upbtn.onclick= function(){
+
+
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            
+            
+            }
+             downbtn.onclick= function(){
+
+
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+             rotateValue = rotateSum;
+
+
+            }
+            
+            
+            </script>
+        
+        </body>
+
+
+
+</html>
